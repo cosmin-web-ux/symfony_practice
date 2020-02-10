@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        {{ form_start(form, {'attr': {'id': 'custom_post_form', 'class': 'some_custom_class'}}) }}
+            {{ form(form) }}
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
