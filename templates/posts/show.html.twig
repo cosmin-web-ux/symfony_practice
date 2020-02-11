@@ -1,5 +1,11 @@
 {% extends 'base.html.twig.' %}
 
 {% block body %}
-  {{ retrievedPost.title }}
+  <h1 class="text-ceter">Show post</h1>
+
+  <strong>Post title: </strong> {{ post.title }}
+  <hr>
+  <strong>Post description: </strong> {{ post.description }}
+  <hr>
+  <strong>Post category: </strong> {{ post.category }}
 {% endblock %}
